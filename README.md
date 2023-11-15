@@ -15,34 +15,33 @@ Empowering users to:
 - Manage and monitor their positions within Lila Finance.
 - Participate and have a say in the governance of Lila Finance.
 
+## Lila Finance Protocol v1
+
+This repository contains the smart contracts source code and markets configuration for Lila Finance Protocol v1. The repository uses Docker Compose and Hardhat as a development environment for compilation, testing, and deployment tasks.
+
+## What is Lila Finance?
+
+Lila Finance is a decentralized, non-custodial DeFi finance protocol offering locked fixed rates, similar to bonds. Users can participate as investors or issuers. Investors provide capital to earn a fixed income, while issuers can raise funds through bond-like instruments with clear, fixed terms.
+
+## Documentation
+
+Explore our technical documentation for a deeper understanding of Lila Finance:
+
+- [Docs](https://lila-finance.gitbook.io/lila-documentation/getting-started-with-cryptocurrency/what-is-decentralized-finance)
+
+## Audits and Formal Verification
+
+All audit reports are currently underway and will be placed in the audits folder.
+
+## Connect with the community
+
+Join our [Discord](https://discord.com/invite/DBuG56VHfn) channel to discuss Lila Finance with peers and experts.
+
 ## Contribution
 
 For detailed instructions on local development, deployment, configurations, and feature proposals, please see [Contributing](./CONTRIBUTING.md).
 
 Also, contributors with at least one pull request merged into the main branch are eligible for a unique GitPOAP.
-
-## IPFS deployment
-
-Each commit is automatically deployed to IPFS.
-
-A GitHub action comments the appropriate IPFS hash embedded in the Cloudflare IPFS gateway after each commit.
-
-## V1 (Active)
-
-For ease of use:
-
-- DNS of [https://staging.lila.finance](https://staging.lila.finance) always points to the latest main IPFS hash with all networks enabled.
-- DNS of [https://app.lila.finance](https://app.lila.finance) always points to the latest main IPFS hash with disabled test networks.
-- DNS of [https://staging.lila.finance](https://staging.lila.finance) always points to the latest main IPFS hash with disabled test networks.
-
-### V0 (Depreciated)
-- DNS of [https://v0.lila.finance](https://v0.lila.finance) always points to the latest main IPFS hash with disabled test networks.
-
-### Troubleshooting
-
-Issue: Cannot connect to `app.lila.finance`
-
-Lila Finance UI is hosted on IPFS in a decentralized manner. `app.lila.finance` just holds a CNAME record to the Cloudflare IPFS gateway. Use [any](https://ipfs.github.io/public-gateway-checker/) public or private IPFS gateway supporting origin isolation to access Lila Finance UI if the Cloudflare gateway doesn't work for you.
 
 ## License
 
